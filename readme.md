@@ -10,7 +10,7 @@ Strawberry Linux の Da Vinci ボード(ATmega32u4搭載)を使用しニキシ�
 * シリアルポートで受信したデータをニキシー管に表示します。
 * データ表示後一定時間経過すると時計表示に戻ります。
 * 電源投入時は内蔵 EEPROM より以前の状態を復元します。
-* 開発環境は arduino-1.0.5
+* 開発環境は AtmelStudio 6.1
 
 
 楠 昌浩(Masahiro Kusunoki)
