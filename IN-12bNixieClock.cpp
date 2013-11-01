@@ -4,6 +4,7 @@
  *
  *  Author. 楠 昌浩(Masahiro Kusunoki)
  *  http://mkusunoki.net
+ *  Release 20131102 Rev 002 show にバージョン表記追加
  *  Release 20131011 Rev 001
  * ---------------------------------------------------------------------------- */
 
@@ -617,6 +618,7 @@ void loop() {
 				Serial1.putstr(msg);
 				sprintf(msg, "set 12/24 format: %d\r\n", hour12_24format);
 				Serial1.putstr(msg);
+				Serial1.putstr("Release 2013/11/02 Rev 002\r\n");
 				Serial1.putstr("---\r\n");
 			}
 		}

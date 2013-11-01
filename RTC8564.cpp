@@ -4,6 +4,7 @@
  *
  *  Author. 楠 昌浩(Masahiro Kusunoki)
  *  http://mkusunoki.net
+ *  Release 20131102 Rev 002 12時間表記。午前12時を12で表示するよう修正
  *  Release 20131011 Rev 001
  * ---------------------------------------------------------------------------- */
 #include "RTC8564.h"
@@ -100,7 +101,7 @@ void RTC8564::get() {
 	yearHigh = Years >> 4;
 	yearLow = Years & 0x0F;
 	i = bcdToBin(Hours);
-	if(i >= 12) {
+	if(i > 12) {
 		i -= 12;
 		Hours12 = binToBcd(i);
 	} else {
