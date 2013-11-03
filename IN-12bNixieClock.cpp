@@ -618,7 +618,7 @@ void loop() {
 				Serial1.putstr(msg);
 				sprintf(msg, "set 12/24 format: %d\r\n", hour12_24format);
 				Serial1.putstr(msg);
-				Serial1.putstr("Release 2013/11/02 Rev 002\r\n");
+				Serial1.putstr("Release 2013/11/03 Ver 1.0\r\n");
 				Serial1.putstr("---\r\n");
 			}
 		}
